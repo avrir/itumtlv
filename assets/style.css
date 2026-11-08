@@ -49,7 +49,7 @@ h1,h2,h3{line-height:1.25;margin:0 0 .5em;}
 .menu-button{display:none;border:0;background:none;color:var(--navy);font-weight:800;font-size:1rem;cursor:pointer;}
 
 /* full-bleed photo hero (home) */
-.photo-hero{position:relative;overflow:hidden;background:var(--navy-deep);aspect-ratio:2.717/1;}
+.photo-hero{position:relative;overflow:hidden;background:var(--navy-deep);aspect-ratio:2.717/1;padding:0;}
 .photo-hero img{width:100%;height:100%;object-fit:cover;object-position:center 30%;}
 .photo-hero .hero-logo{position:absolute;top:50%;right:8%;transform:translateY(-50%);width:clamp(180px,28vw,400px);height:auto;object-fit:contain;opacity:.96;filter:drop-shadow(rgba(255,255,255,.3) 0 8px 24px);}
 
@@ -120,7 +120,7 @@ footer{background:var(--white);border-top:1px solid var(--line);padding:34px 0;}
 .footer-copy{font-size:.82rem;color:var(--muted);margin-top:16px;}
 
 /* about / inner page hero: full-bleed split */
-.split-hero{display:grid;grid-template-columns:1fr 1fr;min-height:580px;}
+.split-hero{display:grid;grid-template-columns:1fr 1fr;min-height:580px;padding:0;}
 .split-hero .media{position:relative;overflow:hidden;}
 .split-hero .media img{width:100%;height:100%;object-fit:cover;}
 .split-hero .content{display:flex;flex-direction:column;justify-content:center;padding:64px clamp(24px,6vw,72px);}
