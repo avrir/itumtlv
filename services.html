@@ -31,8 +31,9 @@
     <a href="index.html" class="brand">
       <img src="assets/images/logo.png" alt="צח כפרי">
     </a>
+    <button type="button" class="menu-button" aria-expanded="false" aria-controls="main-nav-links" onclick="var n=document.getElementById('main-nav-links');var open=n.classList.toggle('open');this.setAttribute('aria-expanded',open?'true':'false');">תפריט</button>
     <nav aria-label="ניווט ראשי">
-      <ul class="nav-links">
+      <ul class="nav-links" id="main-nav-links">
         <li><a href="index.html" class="nav-link">דף הבית</a></li>
 <li><a href="services.html" class="nav-link active">שירותים</a></li>
 <li><a href="projects.html" class="nav-link">תיק עבודות</a></li>

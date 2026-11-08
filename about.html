@@ -31,8 +31,9 @@
     <a href="index.html" class="brand">
       <img src="assets/images/logo.png" alt="צח כפרי">
     </a>
+    <button type="button" class="menu-button" aria-expanded="false" aria-controls="main-nav-links" onclick="var n=document.getElementById('main-nav-links');var open=n.classList.toggle('open');this.setAttribute('aria-expanded',open?'true':'false');">תפריט</button>
     <nav aria-label="ניווט ראשי">
-      <ul class="nav-links">
+      <ul class="nav-links" id="main-nav-links">
         <li><a href="index.html" class="nav-link">דף הבית</a></li>
 <li><a href="services.html" class="nav-link">שירותים</a></li>
 <li><a href="projects.html" class="nav-link">תיק עבודות</a></li>
@@ -46,20 +47,19 @@
 <main id="main">
 
   <section class="split-hero">
-    <div class="media"><img src="assets/images/home-hero-person.jpg" alt="עבודת איטום על רקע תל אביב" loading="eager"></div>
     <div class="content">
       <span class="eyebrow">אודות</span>
       <h1>לא מעגל פינות.<br>גם כשאף אחד לא רואה.</h1>
       <p>אני עובד כבר שנים באיטום, רטיבויות, שיקום וביצוע פרויקטים. מבחינתי מקצועיות היא קודם להבין מה באמת קורה, להסביר ללקוח, לעבוד מסודר ולהישאר עד שהעבודה גמורה.</p>
       <p>אני לא מחפש להיות ההצעה הכי זולה. אני כן רוצה שכאשר מסיימים, תדעו בדיוק מה נעשה ולמה, ותרגישו שהיה לכם עם מי לעבוד לאורך כל הדרך.</p>
     </div>
+    <div class="media"><img src="assets/images/about-drill.jpg" alt="צח כפרי עובד עם מקדחה על קיר" loading="eager"></div>
   </section>
 
   <section class="section-tight center-block">
     <div class="shell narrow">
       <h2>יש עבודות שפשוט צריך לעשות כמו שצריך.</h2>
       <p>לפני שמתחילים אני מעדיף להבין את מקור הבעיה, את מצב התשתית ואת הדרך הנכונה לטפל בה. לפעמים אפשר לפתור נקודתית, ולפעמים צריך טיפול רחב יותר. המטרה היא לא רק שהתוצאה תיראה טוב ביום שסיימנו, אלא שהיא תחזיק.</p>
-      <span class="short-rule" aria-hidden="true"></span>
       <p class="statement-line">קודם מבינים. אחר כך מתקנים.</p>
     </div>
   </section>
