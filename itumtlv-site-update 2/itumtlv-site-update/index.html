@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>איטום מהיסוד | קבלן איטום בתל אביב, רמת גן והרצליה</title>
+<meta name="description" content="איטום מהיסוד — קבלן איטום מוסמך לגגות, בריכות, מקלחות ומרתפים בתל אביב, רמת גן, הרצליה וגבעתיים. אבחון מדויק לפני ביצוע. התקשרו 054-7625599.">
+<meta property="og:title" content="איטום מהיסוד | קבלן איטום בתל אביב והמרכז">
+<meta property="og:description" content="איטום שמתחיל מהיסוד, לא מהסימפטום. גגות, בריכות, מקלחות ומרתפים. אבחון מדויק, הצעת מחיר כתובה, ביצוע מקצועי.">
+<meta property="og:type" content="business.business">
+<meta property="og:locale" content="he_IL">
+<meta property="og:image" content="https://itumtlv.co.il/images/hero-terrace.jpg">
+<link rel="canonical" href="https://itumtlv.co.il/">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<style>
+  :root{
+    --bg: #F1EFEA;
+    --surface: #FFFFFF;
+    --surface-2: #E6E2D8;
+    --ink: #201C17;
+    --ink-soft: #5C564C;
+    --ink-faint: #948C7D;
+    --line: #D6D0C2;
+    --line-strong: #B8AF9C;
+    --water: #2E6B85;
+    --water-deep: #1F4C60;
+    --water-soft: #D9E7EC;
+    --accent: #C97A1F;
+    --accent-soft: #F3DFC0;
+    --good: #4C7A4F;
+    --shadow: rgba(32, 28, 23, 0.10);
+    --font-display: "Suez One", "Frank Ruhl Libre", serif;
+    --font-body: "Assistant", "Heebo", "Segoe UI", sans-serif;
+    --font-mono: "JetBrains Mono", ui-monospace, "Courier New", monospace;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg: #191510;
+      --surface: #221D16;
+      --surface-2: #2C2519;
+      --ink: #F1EBE0;
+      --ink-soft: #C4BAA8;
+      --ink-faint: #8C8272;
+      --line: #3B3325;
+      --line-strong: #4E4531;
+      --water: #7FB4CC;
+      --water-deep: #5E93AC;
+      --water-soft: #24333A;
+      --accent: #E8A23F;
+      --accent-soft: #4A3618;
+      --good: #7FAE82;
+      --shadow: rgba(0, 0, 0, 0.4);
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg: #191510;
+    --surface: #221D16;
+    --surface-2: #2C2519;
+    --ink: #F1EBE0;
+    --ink-soft: #C4BAA8;
+    --ink-faint: #8C8272;
+    --line: #3B3325;
+    --line-strong: #4E4531;
+    --water: #7FB4CC;
+    --water-deep: #5E93AC;
+    --water-soft: #24333A;
+    --accent: #E8A23F;
+    --accent-soft: #4A3618;
+    --good: #7FAE82;
+    --shadow: rgba(0, 0, 0, 0.4);
+  }
+
+  *{ box-sizing: border-box; }
+  html, body{ margin: 0; padding: 0; }
+  body{
+    background: var(--bg);
+    color: var(--ink);
+    direction: rtl;
+    text-align: right;
+    font-family: var(--font-body);
+  }
+  h1,h2,h3{ font-family: var(--font-display); font-weight: 400; text-wrap: balance; margin: 0; }
+  p{ margin: 0; line-height: 1.65; }
+  a{ color: inherit; }
+  img{ max-width: 100%; }
+  .num{ font-family: var(--font-mono); font-variant-numeric: tabular-nums; }
+  .wrap{ max-width: 1080px; margin: 0 auto; padding-inline: 20px; }
+
+  /* ---- top bar ---- */
+  .topbar{
+    position: sticky; top: env(safe-area-inset-top, 0px); z-index: 40;
+    background: color-mix(in srgb, var(--bg) 88%, transparent);
+    backdrop-filter: blur(6px);
+    border-bottom: 1px solid var(--line);
+  }
+  .topbar-in{
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 14px 20px; max-width: 1080px; margin: 0 auto; gap: 12px;
+  }
+  .brand{ display: flex; align-items: baseline; gap: 8px; }
+  .brand-mark{ font-family: var(--font-display); font-size: 20px; }
+  .brand-sub{ font-family: var(--font-mono); font-size: 10px; color: var(--ink-faint); letter-spacing: .08em; }
+  .topbar .phone{
+    display: flex; align-items: center; gap: 8px;
+    font-family: var(--font-mono); font-size: 15px; font-weight: 500;
+    padding: 8px 14px; border: 1.5px solid var(--ink); border-radius: 999px;
+    text-decoration: none;
+  }
+  .topbar .phone:hover{ background: var(--ink); color: var(--bg); }
+
+  /* ---- hero: photo backdrop ---- */
+  .hero-photo{
+    position: relative;
+    overflow: hidden;
+    padding: 70px 0 64px;
+    color: #F3F0E9;
+  }
+  .hero-photo .photo{
+    position: absolute; inset: 0; z-index: 0;
+    background-image: url('images/hero-terrace.jpg');
+    background-size: cover;
+    background-position: center 68%;
+  }
+  .hero-photo .scrim{
+    position: absolute; inset: 0; z-index: 1;
+    background: linear-gradient(180deg,
+      color-mix(in srgb, #0b1a20 92%, transparent) 0%,
+      color-mix(in srgb, var(--water-deep) 80%, transparent) 36%,
+      color-mix(in srgb, var(--water-deep) 40%, transparent) 64%,
+      var(--bg) 100%);
+  }
+  .hero-photo .wrap{ position: relative; z-index: 2; }
+  .hero{ max-width: 640px; }
+  .eyebrow{
+    font-family: var(--font-mono); font-size: 15.5px; letter-spacing: .08em;
+    color: #BFE0EA; text-transform: uppercase; display: block; margin-bottom: 12px;
+  }
+  .hero h1{ font-size: clamp(34px, 6vw, 56px); line-height: 1.08; color: #FBF9F4; }
+  .hero h1 em{ font-style: normal; color: #7FD1E5; }
+  .hero .lede{ margin-top: 16px; font-size: 17px; color: #D8DED8; max-width: 52ch; }
+  .hero-cta{ display: flex; gap: 12px; margin-top: 24px; flex-wrap: wrap; }
+  .btn{
+    font-family: var(--font-body); font-weight: 700; font-size: 15px;
+    padding: 13px 22px; border-radius: 8px; border: 1.5px solid transparent;
+    text-decoration: none; display: inline-flex; align-items: center; gap: 8px;
+    cursor: pointer;
+  }
+  .btn-primary{ background: var(--water); color: #fff; }
+  .btn-primary:hover{ background: var(--water-deep); }
+  .btn-ghost{ border-color: color-mix(in srgb, #fff 45%, transparent); color: #F3F0E9; }
+  .btn-ghost:hover{ border-color: #fff; background: color-mix(in srgb, #fff 10%, transparent); }
+
+  /* certification badge */
+  .cert-badge{
+    margin-top: 26px; display: inline-flex; align-items: center; gap: 10px;
+    padding: 8px 14px 8px 8px; border-radius: 999px;
+    background: color-mix(in srgb, #0b1a20 40%, transparent);
+    border: 1px solid color-mix(in srgb, #fff 30%, transparent);
+  }
+  .cert-badge .seal{ width: 30px; height: 30px; flex: none; }
+  .cert-badge b{ display: block; font-size: 12.5px; color: #FBF9F4; }
+  .cert-badge span{ display: block; font-family: var(--font-mono); font-size: 10.5px; color: #BFE0EA; letter-spacing: .02em; }
+
+  /* the drawing */
+  .drawing{
+    position: relative;
+    background: var(--surface);
+    border: 1.5px solid var(--line-strong);
+    border-radius: 6px;
+    box-shadow: 0 1px 0 var(--shadow);
+    overflow: hidden;
+    margin: 28px 0 8px;
+  }
+  .drawing svg{ display: block; width: 100%; height: auto; }
+  .drawing-tag{
+    position: absolute; top: 14px; inset-inline-start: 16px;
+    font-family: var(--font-mono); font-size: 10.5px; color: var(--ink-faint);
+    letter-spacing: .06em; text-transform: uppercase;
+  }
+
+  /* ---- section headers ---- */
+  section{ margin-top: 56px; }
+  .section-head{ display: flex; align-items: baseline; gap: 12px; margin-bottom: 18px; }
+  .section-head h2{ font-size: 25px; }
+  .section-head .tag{ font-family: var(--font-mono); font-size: 11px; color: var(--ink-faint); letter-spacing: .06em; }
+  .section-lede{ color: var(--ink-soft); max-width: 60ch; margin-bottom: 22px; font-size: 15px; }
+
+  /* ---- services legend ---- */
+  .legend{ display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
+  .legend-item{ background: var(--surface); padding: 20px 18px; display: flex; flex-direction: column; gap: 8px; }
+  .legend-num{ font-family: var(--font-mono); font-size: 11px; color: var(--water); }
+  .legend-item h3{ font-size: 16.5px; }
+  .legend-item p{ font-size: 13.5px; color: var(--ink-soft); }
+
+  /* ---- field gallery: before/after ---- */
+  .compare-grid{ display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-bottom: 28px; }
+  .compare-pair{ background: var(--surface); border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
+  .compare-imgs{ display: grid; grid-template-columns: 1fr 1fr; }
+  .compare-imgs figure{ position: relative; margin: 0; aspect-ratio: 4/3; overflow: hidden; background: var(--surface-2); }
+  .compare-imgs img{ width: 100%; height: 100%; object-fit: cover; display: block; }
+  .compare-imgs figcaption{
+    position: absolute; bottom: 8px; inset-inline-start: 8px;
+    font-family: var(--font-mono); font-size: 10px; letter-spacing: .08em; text-transform: uppercase;
+    color: #fff; background: rgba(20,17,12,.6); padding: 3px 9px; border-radius: 4px;
+  }
+  .compare-label{ padding: 13px 16px; font-size: 14.5px; font-weight: 700; border-top: 1px solid var(--line); }
+
+  .field-grid{ display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+  .field-grid figure{ margin: 0; }
+  .field-grid img{ width: 100%; aspect-ratio: 1/1; object-fit: cover; border-radius: 8px; border: 1px solid var(--line); display: block; }
+  .field-grid figcaption{ margin-top: 7px; font-size: 12px; color: var(--ink-soft); text-align: center; }
+
+  /* ---- process strip ---- */
+  .process{ display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; position: relative; }
+  .process::before{ content:""; position:absolute; top: 17px; right: 8%; left: 8%; height: 1px; background: var(--line-strong); }
+  .step{ position: relative; padding-top: 44px; text-align: center; }
+  .step-dot{
+    position: absolute; top: 0; right: 50%; transform: translateX(50%);
+    width: 34px; height: 34px; border-radius: 50%; background: var(--surface);
+    border: 1.5px solid var(--water); color: var(--water);
+    display: flex; align-items: center; justify-content: center;
+    font-family: var(--font-mono); font-size: 13px; z-index: 1;
+  }
+  .step h3{ font-size: 15px; margin-bottom: 6px; }
+  .step p{ font-size: 13px; color: var(--ink-soft); }
+
+  /* ---- area + trust ---- */
+  .split{ display: grid; grid-template-columns: 1.1fr .9fr; gap: 40px; align-items: start; }
+  .areas{ display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+  .area-chip{
+    font-family: var(--font-mono); font-size: 12.5px; padding: 7px 13px;
+    border-radius: 20px; background: var(--water-soft); color: var(--water-deep);
+    border: 1px solid transparent;
+  }
+  .trust-list{ display: flex; flex-direction: column; gap: 0; border-top: 1px solid var(--line); }
+  .trust-item{ display: grid; grid-template-columns: 22px 1fr; gap: 12px; padding: 14px 2px; border-bottom: 1px solid var(--line); }
+  .trust-check{ color: var(--good); font-family: var(--font-mono); font-size: 15px; line-height: 1.4; }
+  .trust-item b{ font-size: 14.5px; }
+  .trust-item span{ display:block; font-size: 13px; color: var(--ink-soft); margin-top: 2px; }
+
+  /* ---- CTA band ---- */
+  .cta-band{
+    margin-top: 64px; background: var(--water); color: #fff;
+    border-radius: 10px; padding: 34px 30px;
+    display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap;
+  }
+  .cta-band h2{ color: #fff; font-size: 24px; }
+  .cta-band p{ color: color-mix(in srgb, #fff 82%, transparent); margin-top: 6px; font-size: 14.5px; max-width: 46ch; }
+  .cta-band .btn-primary{ background: #fff; color: var(--water-deep); }
+  .cta-band .btn-primary:hover{ background: var(--water-soft); }
+
+  /* ---- footer ---- */
+  footer{ margin-top: 56px; padding: 26px 0 48px; border-top: 1px solid var(--line); }
+  .foot-grid{ display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; font-size: 13px; color: var(--ink-faint); }
+  .foot-grid b{ color: var(--ink); font-family: var(--font-mono); font-weight: 500; }
+
+  @media (max-width: 760px){
+    .legend{ grid-template-columns: 1fr; }
+    .process{ grid-template-columns: 1fr 1fr; gap: 28px 0; }
+    .process::before{ display:none; }
+    .split{ grid-template-columns: 1fr; }
+    .compare-grid{ grid-template-columns: 1fr; }
+    .field-grid{ grid-template-columns: 1fr 1fr; }
+  }
+  @media (max-width: 460px){
+    .process{ grid-template-columns: 1fr; }
+  }
+</style>
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Suez+One&family=Assistant:wght@400;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+</head>
+<body>
+<div dir="rtl" lang="he">
+
+  <div class="topbar">
+    <div class="topbar-in">
+      <div class="brand">
+        <span class="brand-mark">איטום מהיסוד</span>
+      </div>
+      <a class="phone" href="tel:0547625599">054-7625599</a>
+    </div>
+  </div>
+
+  <div class="hero-photo">
+    <div class="photo"></div>
+    <div class="scrim"></div>
+    <div class="wrap">
+      <div class="hero">
+        <span class="eyebrow">קבלן איטום · תל אביב והמרכז</span>
+        <h1>איטום שמתחיל <em>מהיסוד</em>,<br>לא מהסימפטום</h1>
+        <p class="lede">כל עבודה אצלנו מתחילה באבחון מדויק של מקור הרטיבות — לא רק סתימת הכתם. גגות, בריכות, מקלחות ומרתפים, בעבודה יסודית מהיסוד ועד הגמר.</p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="https://wa.me/972547625599" target="_blank" rel="noopener">שלחו וואטסאפ לייעוץ</a>
+          <a class="btn btn-ghost" href="tel:0547625599">התקשרו: 054-7625599</a>
+        </div>
+        <div class="cert-badge">
+          <svg class="seal" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <circle cx="20" cy="20" r="18" fill="none" stroke="#BFE0EA" stroke-width="1.4"/>
+            <circle cx="20" cy="20" r="13.5" fill="none" stroke="#BFE0EA" stroke-width="1" stroke-dasharray="2.4 2.4"/>
+            <path d="M13 20.5 L18 25.5 L27.5 14.5" fill="none" stroke="#7FD1E5" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <div>
+            <b>הסמכה ממכון התקנים הישראלי</b>
+            <span>קבלן איטום מוסמך</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap">
+
+    <div class="hero-drawing">
+      <div class="section-head">
+        <h2>איפה אנחנו מתערבים</h2>
+        <span class="tag">חתך מעטפת הבניין</span>
+      </div>
+      <p class="section-lede">ארבע מתוך שש נקודות התורפה הנפוצות ביותר לרטיבות בבית — כל אחת מהן מפורטת בסעיף "סוגי האיטום" שממש מתחתיו.</p>
+      <div class="drawing">
+        <svg viewBox="0 0 1040 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="חתך אדריכלי של בניין עם סימון שכבות האיטום בגג, במרתף, במקלחת ובבריכה">
+          <rect x="0" y="0" width="1040" height="420" fill="var(--surface)"/>
+          <!-- ground -->
+          <rect x="0" y="360" width="1040" height="60" fill="var(--surface-2)"/>
+          <line x1="0" y1="360" x2="1040" y2="360" stroke="var(--line-strong)" stroke-width="1.5"/>
+          <!-- building shell -->
+          <path d="M180 360 V150 L360 70 L620 150 V360" fill="none" stroke="var(--ink-soft)" stroke-width="2"/>
+          <!-- roof waterproof membrane -->
+          <path d="M180 150 L360 70 L620 150" fill="none" stroke="var(--water)" stroke-width="5" stroke-linecap="round"/>
+          <!-- basement box -->
+          <rect x="200" y="300" width="110" height="60" fill="none" stroke="var(--ink-soft)" stroke-width="1.5"/>
+          <rect x="196" y="296" width="118" height="6" fill="var(--water)"/>
+          <line x1="196" y1="360" x2="196" y2="296" stroke="var(--water)" stroke-width="5"/>
+          <!-- shower box -->
+          <rect x="360" y="230" width="90" height="70" fill="none" stroke="var(--ink-soft)" stroke-width="1.5"/>
+          <rect x="360" y="296" width="90" height="6" fill="var(--water)"/>
+          <!-- pool -->
+          <rect x="700" y="320" width="210" height="40" rx="3" fill="var(--water-soft)" stroke="var(--ink-soft)" stroke-width="1.5"/>
+          <rect x="700" y="316" width="210" height="6" fill="var(--water)"/>
+          <path d="M710 336 q10 -8 20 0 t20 0 t20 0 t20 0 t20 0 t20 0 t20 0 t20 0 t20 0" fill="none" stroke="var(--water-deep)" stroke-width="1.5" opacity=".55"/>
+
+          <!-- leader: roof -->
+          <line x1="360" y1="70" x2="360" y2="40" stroke="var(--line-strong)" stroke-width="1"/>
+          <line x1="360" y1="40" x2="440" y2="40" stroke="var(--line-strong)" stroke-width="1"/>
+          <text x="448" y="44" font-family="JetBrains Mono, monospace" font-size="12" fill="var(--ink)">01 — יריעת איטום, גג</text>
+
+          <!-- leader: basement -->
+          <line x1="196" y1="310" x2="130" y2="310" stroke="var(--line-strong)" stroke-width="1"/>
+          <text x="128" y="314" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="12" fill="var(--ink)">04 — מרתף ויסודות</text>
+
+          <!-- leader: shower -->
+          <line x1="450" y1="260" x2="500" y2="260" stroke="var(--line-strong)" stroke-width="1"/>
+          <text x="508" y="264" font-family="JetBrains Mono, monospace" font-size="12" fill="var(--ink)">03 — מקלחת</text>
+
+          <!-- leader: pool -->
+          <line x1="805" y1="316" x2="805" y2="290" stroke="var(--line-strong)" stroke-width="1"/>
+          <text x="735" y="280" font-family="JetBrains Mono, monospace" font-size="12" fill="var(--ink)">02 — בריכה / מיכל מים</text>
+
+          <!-- scale note -->
+          <text x="20" y="398" font-family="JetBrains Mono, monospace" font-size="10.5" fill="var(--ink-faint)">קו כחול = שכבת איטום פעילה</text>
+        </svg>
+      </div>
+    </div>
+
+    <section id="services">
+      <div class="section-head">
+        <h2>סוגי האיטום</h2>
+        <span class="tag">שירות מלא</span>
+      </div>
+      <p class="section-lede">מגוון עבודות האיטום שאנחנו מבצעים — כל אחת עם שיטת עבודה וחומרים המתאימים לסוג המשטח והבעיה.</p>
+      <div class="legend">
+        <div class="legend-item">
+          <span class="legend-num">01</span>
+          <h3>איטום גגות</h3>
+          <p>יריעות ביטומניות או ציפוי פוליאוריטני, בהתאם למצב הגג ולסוג הבנייה.</p>
+        </div>
+        <div class="legend-item">
+          <span class="legend-num">02</span>
+          <h3>בריכות ומיכלי מים</h3>
+          <p>איטום עמיד למים עומדים ולתנודות טמפרטורה, כולל בדיקת לחץ לפני מסירה.</p>
+        </div>
+        <div class="legend-item">
+          <span class="legend-num">03</span>
+          <h3>מקלחות וחדרי רחצה</h3>
+          <p>איטום תחת האריחים ובזוויות הקיר-רצפה, שם רוב הנזילות מתחילות בפועל.</p>
+        </div>
+        <div class="legend-item">
+          <span class="legend-num">04</span>
+          <h3>מרתפים ויסודות</h3>
+          <p>איטום שלילי וחיובי נגד רטיבות עולה ולחות קרקע, כולל ניקוז היקפי בעת הצורך. בעלי ניסיון רב גם בהזרקות איטום פוליאוריטן — חומר בהזרקה בלחץ אל תוך סדקים וחללים, לאיטום תת-קרקעי ומאגרי מים ללא פירוק.</p>
+        </div>
+        <div class="legend-item">
+          <span class="legend-num">05</span>
+          <h3>מרפסות</h3>
+          <p>איטום תחת ריצוף קיים, בלי פירוק — פתרון מהיר לבתים משותפים.</p>
+        </div>
+        <div class="legend-item">
+          <span class="legend-num">06</span>
+          <h3>איתור נזילות</h3>
+          <p>אבחון מקור הרטיבות לפני שמתחילים לעבוד — כדי שנדע לטפל בשורש הבעיה בגישה הנכונה ביותר.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery">
+      <div class="section-head">
+        <h2>עבודות בשטח</h2>
+        <span class="tag">לפני ואחרי</span>
+      </div>
+      <p class="section-lede">תמונות אמיתיות מעבודות שביצענו — לא הדמיות. כל עבודה מתועדת מהאבחון ועד המסירה.</p>
+
+      <div class="compare-grid">
+        <div class="compare-pair">
+          <div class="compare-imgs">
+            <figure><img src="images/terrace-before.jpg" alt="מרפסת גג לפני איטום, ריצוף חשוף ורטוב" loading="lazy"><figcaption>לפני</figcaption></figure>
+            <figure><img src="images/terrace-after.jpg" alt="מרפסת גג אחרי איטום, ציפוי לבן אחיד" loading="lazy"><figcaption>אחרי</figcaption></figure>
+          </div>
+          <p class="compare-label">איטום מרפסת גג — ציפוי אקרילי מלא</p>
+        </div>
+        <div class="compare-pair">
+          <div class="compare-imgs">
+            <figure><img src="images/roof-before.jpg" alt="גג עם שכבת איטום ישנה וסדוקה" loading="lazy"><figcaption>לפני</figcaption></figure>
+            <figure><img src="images/roof-after.jpg" alt="אותו גג אחרי ציפוי איטום חדש" loading="lazy"><figcaption>אחרי</figcaption></figure>
+          </div>
+          <p class="compare-label">חידוש איטום גג — תל אביב</p>
+        </div>
+      </div>
+
+      <div class="field-grid">
+        <figure>
+          <img src="images/leak-ceiling.jpg" alt="איתור נזילה בתקרה, טיח קלוף" loading="lazy">
+          <figcaption>איתור נזילה בתקרה</figcaption>
+        </figure>
+        <figure>
+          <img src="images/roof-tiles.jpg" alt="בדיקת רעפים לפני עבודת איטום" loading="lazy">
+          <figcaption>בדיקת רעפים בשטח</figcaption>
+        </figure>
+        <figure>
+          <img src="images/shower-prep.jpg" alt="הכנת רצפת מקלחת לאיטום" loading="lazy">
+          <figcaption>הכנה לאיטום מקלחת</figcaption>
+        </figure>
+        <figure>
+          <img src="images/materials.jpg" alt="חומרי איטום מקצועיים בשימוש" loading="lazy">
+          <figcaption>חומרים מקצועיים</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="process">
+      <div class="section-head">
+        <h2>תהליך העבודה שלנו</h2>
+        <span class="tag">4 שלבים</span>
+      </div>
+      <div class="process">
+        <div class="step">
+          <div class="step-dot">1</div>
+          <h3>אבחון בשטח</h3>
+          <p>בדיקה ואיתור מקור הרטיבות, לא רק הסימן שלה.</p>
+        </div>
+        <div class="step">
+          <div class="step-dot">2</div>
+          <h3>הצעת מחיר ברורה</h3>
+          <p>שיטת עבודה, חומרים ולוח זמנים — לפני שמתחילים.</p>
+        </div>
+        <div class="step">
+          <div class="step-dot">3</div>
+          <h3>ביצוע</h3>
+          <p>עבודה מסודרת עם ניקיון השטח בסיום כל יום.</p>
+        </div>
+        <div class="step">
+          <div class="step-dot">4</div>
+          <h3>בדיקה סופית</h3>
+          <p>וידוא אטימות לפני מסירה, ומענה זמין גם אחרי.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="area">
+      <div class="split">
+        <div>
+          <div class="section-head">
+            <h2>אזור השירות</h2>
+            <span class="tag">מוקד מרכז</span>
+          </div>
+          <p class="section-lede">מתמקדים באזור מוגדר כדי להגיע מהר ולהכיר כל שכונה — לא פרוסים על פני כל הארץ.</p>
+          <div class="areas">
+            <span class="area-chip">תל אביב</span>
+            <span class="area-chip">רמת גן</span>
+            <span class="area-chip">הרצליה</span>
+            <span class="area-chip">גבעתיים</span>
+          </div>
+        </div>
+        <div>
+          <div class="section-head">
+            <h2>למה מהיסוד</h2>
+            <span class="tag">גישת העבודה</span>
+          </div>
+          <div class="trust-list">
+            <div class="trust-item">
+              <span class="trust-check">✓</span>
+              <div><b>אבחון לפני ביצוע</b><span>לא סוגרים כתם — מטפלים במקור.</span></div>
+            </div>
+            <div class="trust-item">
+              <span class="trust-check">✓</span>
+              <div><b>הצעת מחיר כתובה</b><span>יודעים בדיוק מה כלול, בלי הפתעות.</span></div>
+            </div>
+            <div class="trust-item">
+              <span class="trust-check">✓</span>
+              <div><b>מענה מהיר בוואטסאפ</b><span>שאלה שולחים, תשובה מקבלים באותו יום.</span></div>
+            </div>
+            <div class="trust-item">
+              <span class="trust-check">✓</span>
+              <div><b>הסמכה ממכון התקנים הישראלי</b><span>עבודה לפי תקן, לא רק לפי עין מקצועית.</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="cta-band">
+      <div>
+        <h2>יש רטיבות? בואו נבדוק את המקור שלה</h2>
+        <p>ייעוץ ראשוני בטלפון או בוואטסאפ, ללא התחייבות.</p>
+      </div>
+      <a class="btn btn-primary" href="https://wa.me/972547625599" target="_blank" rel="noopener">לשליחת הודעה בוואטסאפ</a>
+    </div>
+
+    <footer>
+      <div class="foot-grid">
+        <span>איטום מהיסוד · <b class="num">054-7625599</b></span>
+        <span>תל אביב · רמת גן · הרצליה · גבעתיים</span>
+        <span class="num">info@itumtlv.co.il</span>
+      </div>
+    </footer>
+
+  </div>
+</div>
+</body>
+</html>
