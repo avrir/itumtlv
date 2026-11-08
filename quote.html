@@ -22,6 +22,11 @@
 <body>
 <a href="#main" class="skip">דלג לתוכן</a>
 <header class="site-header">
+  <div class="shell topbar">
+    <a href="tel:0547625599">054-7625599</a>
+    <span class="dot">•</span>
+    <a href="quote.html">הצעת מחיר</a>
+  </div>
   <div class="shell nav">
     <a href="index.html" class="brand">
       <img src="logo-horizontal.png" alt="איטום מהיסוד">
@@ -36,69 +41,73 @@
 
       </ul>
     </nav>
-    <a href="quote.html" class="nav-cta">הצעת מחיר</a>
   </div>
 </header>
-
 <main id="main">
-  <section style="padding-bottom:0;">
+
+  <section class="page-head">
     <div class="shell narrow">
       <span class="eyebrow">הצעת מחיר</span>
       <h1>ספרו לנו מה צריך לתקן</h1>
-      <p style="color:var(--muted);font-size:1.08rem;">תמלאו כמה פרטים, ובסוף נפתחת הודעת וואטסאפ מוכנה עם המידע — אתם רק שולחים.</p>
+      <p>תמלאו כמה פרטים, ובסוף נפתחת הודעת וואטסאפ מוכנה עם המידע — אתם רק שולחים.</p>
     </div>
   </section>
-  <section style="padding-top:20px;">
-    <div class="shell quote-wrap">
-      <form class="form-card" id="quote-form">
-        <div class="field">
-          <label for="qf-name">שם מלא</label>
-          <input type="text" id="qf-name" name="name" required>
-        </div>
-        <div class="field">
-          <label for="qf-phone">טלפון</label>
-          <input type="tel" id="qf-phone" name="phone" required>
-        </div>
-        <div class="field">
-          <label for="qf-area">אזור העבודה</label>
-          <input type="text" id="qf-area" name="area" placeholder="לדוגמה: תל אביב, רמת גן...">
-        </div>
-        <div class="field">
-          <label>סוג העבודה</label>
-          <div class="radio-group">
-            <label class="radio-opt"><input type="radio" name="type" value="איטום / רטיבות" checked> איטום / רטיבות</label>
-            <label class="radio-opt"><input type="radio" name="type" value="שיקום מבנים"> שיקום מבנים</label>
-            <label class="radio-opt"><input type="radio" name="type" value="תיקונים וגימור"> תיקונים וגימור</label>
-            <label class="radio-opt"><input type="radio" name="type" value="אחר"> אחר</label>
+  <section class="section-tight">
+    <div class="shell quote-grid">
+      <form id="quote-form">
+        <div class="field-row">
+          <div class="field-flat">
+            <label for="qf-name">שם מלא</label>
+            <input type="text" id="qf-name" name="name" required>
+          </div>
+          <div class="field-flat">
+            <label for="qf-phone">טלפון</label>
+            <input type="tel" id="qf-phone" name="phone" required>
           </div>
         </div>
-        <div class="field">
+        <div class="field-row">
+          <div class="field-flat">
+            <label for="qf-area">אזור העבודה</label>
+            <input type="text" id="qf-area" name="area" placeholder="לדוגמה: תל אביב, רמת גן...">
+          </div>
+          <div class="field-flat">
+            <label for="qf-type">סוג העבודה</label>
+            <select id="qf-type" name="type">
+              <option>איטום / רטיבות</option>
+              <option>שיקום מבנים</option>
+              <option>תיקונים וגימור</option>
+              <option>אחר</option>
+            </select>
+          </div>
+        </div>
+        <div class="field-flat">
           <label for="qf-desc">מה צריך לעשות?</label>
           <textarea id="qf-desc" name="desc" rows="4" placeholder="תארו בקצרה את הבעיה, איפה היא ומתי היא התחילה"></textarea>
         </div>
-        <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">להמשיך לוואטסאפ</button>
+        <p class="hint" style="margin-bottom:14px;">אפשר לצרף תמונות וסרטונים ישירות ב-WhatsApp אחרי פתיחת ההודעה.</p>
+        <button type="submit" class="btn btn-primary btn-block">להמשיך ל-WhatsApp</button>
       </form>
-      <aside class="side-note">
+      <aside class="note-plain">
         <h3>כדי שנבין מהר יותר</h3>
         <ul>
           <li>תארו בקצרה את הבעיה, איפה היא ומזה כמה זמן קיימת.</li>
           <li>אפשר לצרף תמונות או סרטון ישירות בוואטסאפ אחרי שההודעה נפתחת.</li>
           <li>אין התחייבות — זו רק נקודת פתיחה להערכה ראשונית.</li>
         </ul>
-        <p style="margin-top:20px;color:var(--muted);">אפשר גם ישירות:</p>
-        <p><a href="tel:0547625599" class="btn btn-outline" style="width:100%;justify-content:center;margin-bottom:10px;">054-7625599</a></p>
-        <p><a href="mailto:info@itumtlv.co.il" class="btn btn-outline" style="width:100%;justify-content:center;">info@itumtlv.co.il</a></p>
+        <div class="contacts">
+          <p><a href="tel:0547625599">054-7625599</a></p>
+          <p><a href="mailto:info@itumtlv.co.il">info@itumtlv.co.il</a></p>
+        </div>
       </aside>
     </div>
   </section>
-</main>
 <script>
 document.getElementById('quote-form').addEventListener('submit', function(e){
   e.preventDefault();
   var name = document.getElementById('qf-name').value.trim();
   var phone = document.getElementById('qf-phone').value.trim();
   var area = document.getElementById('qf-area').value.trim();
-  var type = document.querySelector('input[name="type"]:checked').value;
+  var type = document.getElementById('qf-type').value;
   var desc = document.getElementById('qf-desc').value.trim();
   var lines = [
     'בקשת הצעת מחיר מהאתר:',
@@ -112,40 +121,18 @@ document.getElementById('quote-form').addEventListener('submit', function(e){
   window.open('https://wa.me/972547625599?text=' + text, '_blank');
 });
 </script>
+
+</main>
 <footer>
-  <div class="shell">
-    <div class="footer-top">
-      <div class="footer-brand">
-        <img src="logo-horizontal-light.png" alt="איטום מהיסוד" style="height:30px;">
-        <p style="max-width:40ch;color:#8ea4b8;margin-top:14px;">איטום, טיפול ברטיבות ושיקום מבנים בתל אביב, רמת גן, הרצליה וגבעתיים.</p>
-      </div>
-      <div class="footer-links">
-        <div>
-          <h4>ניווט</h4>
-          <ul>
-            <li><a href="index.html">דף הבית</a></li>
-            <li><a href="services.html">שירותים</a></li>
-            <li><a href="projects.html">תיק עבודות</a></li>
-            <li><a href="faq.html">שאלות ותשובות</a></li>
-            <li><a href="about.html">אודות</a></li>
-            <li><a href="quote.html">הצעת מחיר</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4>יצירת קשר</h4>
-          <ul>
-            <li><a href="tel:0547625599">054-7625599</a></li>
-            <li><a href="mailto:info@itumtlv.co.il">info@itumtlv.co.il</a></li>
-            <li><a href="https://wa.me/972547625599">וואטסאפ</a></li>
-          </ul>
-        </div>
-      </div>
+  <div class="shell footer-row">
+    <div class="footer-contacts">
+      <a href="https://wa.me/972547625599">WhatsApp</a>
+      <a href="mailto:info@itumtlv.co.il">info@itumtlv.co.il</a>
+      <a href="tel:0547625599">054-7625599</a>
     </div>
-    <div class="footer-bottom">
-      <span>© 2026 איטום מהיסוד. כל הזכויות שמורות.</span>
-      <span>תל אביב · רמת גן · הרצליה · גבעתיים</span>
-    </div>
+    <a href="index.html" class="footer-logo"><img src="logo-horizontal.png" alt="איטום מהיסוד"></a>
   </div>
+  <div class="shell footer-copy">© 2026 איטום מהיסוד. כל הזכויות שמורות. תל אביב · רמת גן · הרצליה · גבעתיים</div>
 </footer>
 </body>
 </html>
